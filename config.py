@@ -1,9 +1,11 @@
 import pymongo
+from pymongo import MongoClient
 import os
 
 CONNECTION_STRING = "mongodb://localhost"  # replace it with your settings
 CONNECTION = pymongo.MongoClient(CONNECTION_STRING)
-
+db = client.app54269154
+collection = db.professionalblog
 '''Leave this as is if you dont have other configuration'''
 DATABASE = CONNECTION.blog
 POSTS_COLLECTION = DATABASE.posts
