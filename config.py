@@ -1,17 +1,15 @@
 import pymongo
-from pymongo import MongoClient
 import os
 
-CONNECTION_STRING = "mongodb://localhost"  # replace it with your settings
+CONNECTION_STRING = "mongodb://localhost" 
 CONNECTION = pymongo.MongoClient(CONNECTION_STRING)
-MONGO_URL = os.environ.get('MONGOHQ_URL')
-client = MongoClient(MONGO_URL)
+
 '''Leave this as is if you dont have other configuration'''
 DATABASE = CONNECTION.blog
 POSTS_COLLECTION = DATABASE.posts
 USERS_COLLECTION = DATABASE.users
 SETTINGS_COLLECTION = DATABASE.settings
-DATABASE= client.app54270968
+
 SECRET_KEY = ""
 basedir = os.path.abspath(os.path.dirname(__file__))
 secret_file = os.path.join(basedir, '.secret')
