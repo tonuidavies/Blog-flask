@@ -12,11 +12,11 @@ A registered user is able to create a blogpost and add tags for easy navivagatio
 
 ## Usability
 
-`* $ git clone https://github.com/tonuidavies/Blog-flask.git`
+*` $ git clone https://github.com/tonuidavies/Blog-flask.git`
 
 cd to the folder 
 
-`* $ python web.py`
+*` $ python web.py`
 
 
 * Enjoy the experience
